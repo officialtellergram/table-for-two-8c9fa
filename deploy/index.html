@@ -179,28 +179,37 @@
   @media(max-width:560px){
     .drop .time{font-size:21px}
     .grid{grid-template-columns:1fr}
+    /* Keep the pinned bar to a single slim row on phones */
+    .topbar{gap:8px;padding-top:11px;padding-bottom:11px;flex-wrap:nowrap}
+    .brand{font-size:14px;letter-spacing:2px;gap:8px;min-width:0}
+    .brand .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .brand small{display:none}
+    .seg button{padding:7px 11px}
+    .iconbtn{padding:7px 9px}
   }
 </style>
 </head>
 <body>
-<header>
-  <div class="topbar-bar" id="topbarBar">
-    <div class="wrap topbar">
-      <div class="brand">
-        <span class="mark">✌️</span>
-        <span class="nm">Table for Two</span>
-        <small id="srcMeta"></small>
-      </div>
-      <div class="spacer"></div>
-      <select class="city-select" id="city" aria-label="City"></select>
-      <div class="seg" role="tablist">
-        <button id="vList" class="active">List</button>
-        <button id="vMap">Map</button>
-      </div>
-      <button class="iconbtn" id="themeToggle" title="Toggle light / dark" aria-label="Toggle theme">☀</button>
-      <button class="iconbtn" id="refresh" title="Refresh data">↻</button>
+<!-- Sticky slim bar: lives OUTSIDE <header> so it stays pinned for the whole
+     page scroll (a sticky element only sticks within its own parent's box). -->
+<div class="topbar-bar" id="topbarBar">
+  <div class="wrap topbar">
+    <div class="brand">
+      <span class="mark">✌️</span>
+      <span class="nm">Table for Two</span>
+      <small id="srcMeta"></small>
     </div>
+    <div class="spacer"></div>
+    <select class="city-select" id="city" aria-label="City"></select>
+    <div class="seg" role="tablist">
+      <button id="vList" class="active">List</button>
+      <button id="vMap">Map</button>
+    </div>
+    <button class="iconbtn" id="themeToggle" title="Toggle light / dark" aria-label="Toggle theme">☀</button>
+    <button class="iconbtn" id="refresh" title="Refresh data">↻</button>
   </div>
+</div>
+<header>
   <div class="wrap">
     <div class="controls" id="controls">
       <div class="search">
