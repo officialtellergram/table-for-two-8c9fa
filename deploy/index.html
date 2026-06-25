@@ -62,6 +62,8 @@
     backdrop-filter:blur(18px) saturate(1.05);transition:box-shadow .25s ease}
   .topbar-bar.stuck{box-shadow:0 1px 0 var(--line),0 12px 28px rgba(0,0,0,.16)}
   .topbar{display:flex;align-items:center;gap:12px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+  /* City picker / List-Map / refresh — scroll away with the page, not pinned */
+  .subbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding-top:16px}
   .brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);
     font-weight:500;font-size:17px;letter-spacing:3.5px;text-transform:uppercase}
   .brand .mark{font-size:18px;align-self:center;transform:rotate(-10deg);
@@ -198,17 +200,20 @@
       <small id="srcMeta"></small>
     </div>
     <div class="spacer"></div>
-    <select class="city-select" id="city" aria-label="City"></select>
-    <div class="seg" role="tablist">
-      <button id="vList" class="active">List</button>
-      <button id="vMap">Map</button>
-    </div>
     <button class="iconbtn" id="themeToggle" title="Toggle light / dark" aria-label="Toggle theme">☀</button>
-    <button class="iconbtn" id="refresh" title="Refresh data">↻</button>
   </div>
 </div>
 <header>
   <div class="wrap">
+    <div class="subbar">
+      <select class="city-select" id="city" aria-label="City"></select>
+      <div class="seg" role="tablist">
+        <button id="vList" class="active">List</button>
+        <button id="vMap">Map</button>
+      </div>
+      <div class="spacer"></div>
+      <button class="iconbtn" id="refresh" title="Refresh data">↻</button>
+    </div>
     <div class="controls" id="controls">
       <div class="search">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
