@@ -1,0 +1,16 @@
+# Netlify auto-reads this — no settings to fill in when you connect the repo.
+[build]
+  publish = "deploy"      # the clean static site (index.html + cities/), no scraper
+  command = ""            # nothing to build; it's plain static
+
+# Always serve fresh city data (availability snapshot) instead of a cached copy.
+[[headers]]
+  for = "/cities/*"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# The HTML shouldn't be cached either, so updates show immediately.
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache"
