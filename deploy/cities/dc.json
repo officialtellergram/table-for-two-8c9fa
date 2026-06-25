@@ -1,0 +1,673 @@
+{
+  "meta": {
+    "source": "curate.py",
+    "city": "Washington, DC",
+    "count": 16,
+    "generated": "2026-06-25",
+    "disclaimer": "Always confirm release times with the restaurant."
+  },
+  "spots": [
+    {
+      "id": "minibar-by-jose-andres",
+      "name": "Minibar by José Andrés",
+      "neighborhood": "Penn Quarter",
+      "cuisine": "Experimental tasting menu",
+      "coordinates": {
+        "lat": 38.8963187,
+        "lng": -77.0235756
+      },
+      "difficulty": 5,
+      "priceRange": "$$$$",
+      "platform": "OpenTable",
+      "platformUrl": "https://www.opentable.com/minibar-by-jose-andres",
+      "website": "https://www.minibarbyjoseandres.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "calendar-month",
+      "releaseTime": "12:00 PM ET",
+      "releaseDay": "1st of previous month",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Two-Michelin-star, only 12 seats per seating, 2 seatings/night",
+        "Reservations release as ticketed tables one calendar month at a time at noon ET on the 1st",
+        "$375/person (José's Table $550/person for 4-6); prepaid ticket",
+        "Set an alarm for noon ET on the 1st and stay flexible on dates"
+      ],
+      "signatureDish": "15+ course avant-garde tasting menu",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "pineapple-and-pearls",
+      "name": "Pineapple and Pearls",
+      "neighborhood": "Capitol Hill / Eastern Market",
+      "cuisine": "Fine dining tasting menu",
+      "coordinates": {
+        "lat": 38.8807042,
+        "lng": -76.9952133
+      },
+      "difficulty": 5,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/pineapple-and-pearls",
+      "website": "https://www.pineappleandpearls.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "calendar-month",
+      "releaseTime": "",
+      "releaseDay": "1st of previous month",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Two-Michelin-star; moved from Tock to Resy — book via Resy",
+        "Reservations open one month ahead",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Multi-course American tasting menu",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 7,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-07-01",
+          "2026-07-02",
+          "2026-07-03",
+          "2026-07-04"
+        ]
+      }
+    },
+    {
+      "id": "roses-luxury",
+      "name": "Rose's Luxury",
+      "neighborhood": "Capitol Hill / Barracks Row",
+      "cuisine": "Modern American small plates",
+      "coordinates": {
+        "lat": 38.8806306,
+        "lng": -76.9952423
+      },
+      "difficulty": 4,
+      "priceRange": "$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/roses-luxury",
+      "website": "https://www.rosesluxury.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "monthly",
+      "releaseTime": "12:00 PM ET",
+      "releaseDay": "1st of previous month",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Reservations drop on the 1st of each month at noon ET for the entire following month",
+        "Weekend slots gone within a couple of hours — be ready at noon",
+        "Use the Resy Notify list for Wed/Thu cancellations"
+      ],
+      "signatureDish": "Lychee salad with pork sausage",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 8,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-07-01",
+          "2026-07-02",
+          "2026-07-03"
+        ]
+      }
+    },
+    {
+      "id": "albi",
+      "name": "Albi",
+      "neighborhood": "Navy Yard",
+      "cuisine": "Palestinian / Levantine",
+      "coordinates": {
+        "lat": 38.8743018,
+        "lng": -76.9997982
+      },
+      "difficulty": 5,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/albi",
+      "website": "https://www.albidc.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "calendar-month",
+      "releaseTime": "12:00 AM ET",
+      "releaseDay": "1st of preceding month",
+      "bookingWindow": "30 days",
+      "bookingWindowDays": 30,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "#1 on Washingtonian's 100 Very Best; Michelin-starred (Michael Rafidi)",
+        "Reservations drop for two calendar months at a time at midnight on the 1st of the preceding month",
+        "Book immediately at release to avoid 5pm-only slots",
+        "Walk-in seats available at the bar"
+      ],
+      "signatureDish": "Wood-fired tasting menu; house pita",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 0,
+        "open": false,
+        "dates": []
+      }
+    },
+    {
+      "id": "dogon-by-kwame-onwuachi",
+      "name": "Dōgon by Kwame Onwuachi",
+      "neighborhood": "Southwest Waterfront",
+      "cuisine": "Afro-Caribbean",
+      "coordinates": {
+        "lat": 38.8834116,
+        "lng": -77.0310193
+      },
+      "difficulty": 5,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/dogon-by-kwame-onwuachi",
+      "website": "https://www.salamanderdc.com/dining/dogon/",
+      "phoneNumber": "",
+      "releaseSchedule": "",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "28 days",
+      "bookingWindowDays": 28,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "Inside Salamander DC; one of the toughest tables in the city",
+        "Booking window roughly 28 days out",
+        "Walk-ins can score bar seats with full menu — arrive early",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Roti; Afro-Caribbean shareable plates",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 9,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-30",
+          "2026-07-01",
+          "2026-07-02",
+          "2026-07-03"
+        ]
+      }
+    },
+    {
+      "id": "causa",
+      "name": "Causa",
+      "neighborhood": "Blagden Alley / Shaw",
+      "cuisine": "Peruvian tasting menu",
+      "coordinates": {
+        "lat": 38.9065532,
+        "lng": -77.0247508
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "OpenTable",
+      "platformUrl": "https://www.opentable.com/r/causa-washington",
+      "website": "https://www.causadc.com/causa",
+      "phoneNumber": "",
+      "releaseSchedule": "",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "60 days",
+      "bookingWindowDays": 60,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Michelin-starred; chef Carlos Delgado (James Beard Best Chef: Mid-Atlantic)",
+        "Reservations released about two months in advance; $179/person prix-fixe",
+        "Two seatings nightly, Wed–Sat; book early",
+        "Sister bar Amazonia (Resy, ~1 month out) is the easier alternative",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Peruvian prix-fixe tasting menu",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "jont",
+      "name": "Jônt",
+      "neighborhood": "Logan Circle / 14th Street",
+      "cuisine": "Japanese-influenced tasting menu",
+      "coordinates": {
+        "lat": 38.9157973,
+        "lng": -77.0320603
+      },
+      "difficulty": 5,
+      "priceRange": "$$$$",
+      "platform": "OpenTable",
+      "platformUrl": "https://www.opentable.com/r/jont-washington",
+      "website": "https://www.jontdc.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Two-Michelin-star, 17-seat chef's counter (Ryan Ratino)",
+        "Primary booking now via OpenTable (historically Tock — confirm before relying on a Tock drop)",
+        "Cancellations open up 3 days out — watch for releases",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Seasonal ingredient-focused tasting counter",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "maydan",
+      "name": "Maydan",
+      "neighborhood": "Cardozo / U Street",
+      "cuisine": "Middle Eastern / North African",
+      "coordinates": {
+        "lat": 38.9198963,
+        "lng": -77.0311849
+      },
+      "difficulty": 4,
+      "priceRange": "$$$",
+      "platform": "Website",
+      "platformUrl": "https://www.maydandc.com/",
+      "website": "https://www.maydandc.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "10:00 AM ET",
+      "releaseDay": "",
+      "bookingWindow": "21 days",
+      "bookingWindowDays": 21,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "Reservations open on a rolling 21-day window at 10am ET",
+        "A few tables and the bar are reserved walk-ins only",
+        "Sun–Wed are easiest; use Resy Notify for cancellations",
+        "Email for large groups (6+) to book further out",
+        "Not bookable on Resy — reserve via the website or by phone"
+      ],
+      "signatureDish": "Live-fire hearth feasts; family-style menu",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "lutece",
+      "name": "Lutèce",
+      "neighborhood": "Georgetown",
+      "cuisine": "Modern French bistro",
+      "coordinates": {
+        "lat": 38.9094031,
+        "lng": -77.0646054
+      },
+      "difficulty": 4,
+      "priceRange": "$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/lutece",
+      "website": "https://www.lutecedc.com/",
+      "phoneNumber": "202 333-8830",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "30 days",
+      "bookingWindowDays": 30,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "Michelin-starred; RAMMY winner",
+        "Rolling 30-day window, reportedly opens around 11am ET — VERIFY release time",
+        "Patio is easier to book than the dining room",
+        "Chef's table is an alternate path to a seat"
+      ],
+      "signatureDish": "Seasonal French small plates",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 13,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-06-29",
+          "2026-06-30"
+        ]
+      }
+    },
+    {
+      "id": "pascual",
+      "name": "Pascual",
+      "neighborhood": "Capitol Hill",
+      "cuisine": "Live-fire modern Mexican",
+      "coordinates": {
+        "lat": 38.8956665,
+        "lng": -76.9951858
+      },
+      "difficulty": 4,
+      "priceRange": "$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/pascual",
+      "website": "https://www.pascualdc.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "30 days",
+      "bookingWindowDays": 30,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "Michelin-recognized; one of DC's hottest 2024–25 tables",
+        "Rolling ~30-day window; prime weekend 7–7:30pm two-tops go ~30 days out",
+        "Mon/Thu book slower (1–2 weeks); walk-ins and earlier/patio seats easier",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Wood-fired Mexican dishes; masa",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 10,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-07-01",
+          "2026-07-02"
+        ]
+      }
+    },
+    {
+      "id": "lardente",
+      "name": "L'Ardente",
+      "neighborhood": "East End / NoMa",
+      "cuisine": "Glam Italian",
+      "coordinates": {
+        "lat": 38.8989595,
+        "lng": -77.0140433
+      },
+      "difficulty": 4,
+      "priceRange": "$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/lardente",
+      "website": "https://www.lardente.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "12:00 AM ET",
+      "releaseDay": "",
+      "bookingWindow": "60 days",
+      "bookingWindowDays": 60,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "Reservations drop 60 days in advance at midnight ET (parties up to 8)",
+        "Bar seating is walk-in only",
+        "Long booking window — set a reminder 60 days ahead"
+      ],
+      "signatureDish": "40-layer lasagna; garganelli al vodka",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 14,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-06-29",
+          "2026-06-30"
+        ]
+      }
+    },
+    {
+      "id": "omakase-at-barracks-row",
+      "name": "Omakase @ Barracks Row",
+      "neighborhood": "Capitol Hill / Barracks Row",
+      "cuisine": "Japanese omakase",
+      "coordinates": {
+        "lat": 38.8805956,
+        "lng": -76.9953153
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/omakase-barracks-row",
+      "website": "https://www.omakasedc.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "12:01 AM ET",
+      "releaseDay": "",
+      "bookingWindow": "14 days",
+      "bookingWindowDays": 14,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Michelin-starred; tiny counter, reservations only",
+        "Rolling 14-day window opening at 12:01am ET",
+        "No-perfume policy; be ready right at release",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Edomae-style omakase",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 2,
+        "open": true,
+        "dates": [
+          "2026-07-07",
+          "2026-07-08"
+        ]
+      }
+    },
+    {
+      "id": "sushi-nakazawa-dc",
+      "name": "Sushi Nakazawa",
+      "neighborhood": "Penn Quarter / Federal Triangle",
+      "cuisine": "Japanese omakase",
+      "coordinates": {
+        "lat": 38.8941177,
+        "lng": -77.0275626
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/sushi-nakazawa-dc",
+      "website": "https://www.sushinakazawa.com/washington-dc",
+      "phoneNumber": "",
+      "releaseSchedule": "",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Michelin-starred; counter $190/person, dining room $160/person",
+        "Counter seats are the prize and book up fastest",
+        "VERIFY release time"
+      ],
+      "signatureDish": "20-course omakase",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 13,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-06-29",
+          "2026-06-30"
+        ]
+      }
+    },
+    {
+      "id": "sushi-taro",
+      "name": "Sushi Taro",
+      "neighborhood": "Dupont Circle",
+      "cuisine": "Japanese omakase / kaiseki",
+      "coordinates": {
+        "lat": 38.909944,
+        "lng": -77.0382421
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/sushi-taro",
+      "website": "https://www.sushitaro.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Michelin-recognized; omakase counter is the hard-to-book seat",
+        "Books about one month in advance — confirm via Resy/email",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Omakase ($275) / Premium omakase ($350)",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 9,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-30",
+          "2026-07-02",
+          "2026-07-03"
+        ]
+      }
+    },
+    {
+      "id": "imperfecto-the-chefs-table",
+      "name": "Imperfecto: The Chef's Table",
+      "neighborhood": "West End",
+      "cuisine": "Mediterranean–Latin tasting menu",
+      "coordinates": {
+        "lat": 38.9043392,
+        "lng": -77.050322
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "Tock",
+      "platformUrl": "https://www.exploretock.com/imperfecto/",
+      "website": "https://www.sevenreasonsgroup.com/imperfecto",
+      "phoneNumber": "+12029641012",
+      "releaseSchedule": "",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Michelin-starred (Enrique Limardo); ~$265/person, optional $180 wine pairing",
+        "Single 7pm seating Wed–Sat; ticketed via Tock (also listed on OpenTable)",
+        "VERIFY release time"
+      ],
+      "signatureDish": "10+ course Mediterranean-Latin tasting menu",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "la-shukran",
+      "name": "La' Shukran",
+      "neighborhood": "Union Market District",
+      "cuisine": "Levantine / Middle Eastern",
+      "coordinates": {
+        "lat": 38.9086101,
+        "lng": -76.9974046
+      },
+      "difficulty": 4,
+      "priceRange": "$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/washington-dc/venues/lashukran",
+      "website": "https://www.lashukran.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "12:00 AM ET",
+      "releaseDay": "",
+      "bookingWindow": "21 days",
+      "bookingWindowDays": 21,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "From the Albi team (Michael Rafidi) — among DC's buzziest tables",
+        "Rolling 21-day window opening at midnight ET; rooftop may open ~3 days ahead, weather-dependent",
+        "Walk-ins possible at the bar later in the evening",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Levantine shareable plates; hummus",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 10,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-06-29",
+          "2026-07-02"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,611 @@
+{
+  "meta": {
+    "source": "curate.py",
+    "city": "Houston, TX",
+    "count": 16,
+    "generated": "2026-06-25",
+    "disclaimer": "Always confirm release times with the restaurant."
+  },
+  "spots": [
+    {
+      "id": "march",
+      "name": "MARCH",
+      "neighborhood": "Montrose",
+      "cuisine": "Mediterranean tasting menu",
+      "coordinates": {
+        "lat": 29.742874,
+        "lng": -95.4001634
+      },
+      "difficulty": 5,
+      "priceRange": "$$$$",
+      "platform": "OpenTable",
+      "platformUrl": "https://www.opentable.com/r/march-houston",
+      "website": "https://www.marchrestaurant.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "60 days",
+      "bookingWindowDays": 60,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Book on OpenTable, NOT Resy (the Resy listing is for the separate Lounge at MARCH).",
+        "Reservations open exactly 60 days out — mark your calendar and be ready early.",
+        "Be flexible on weekday/early seatings (Tue-Sat, 6-10pm).",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Rotating multi-course regional Mediterranean tasting menu (changes by 'season')",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "sushi-horiuchi",
+      "name": "Sushi Horiuchi",
+      "neighborhood": "Montrose",
+      "cuisine": "Japanese omakase",
+      "coordinates": {
+        "lat": 29.7572631,
+        "lng": -95.3950421
+      },
+      "difficulty": 5,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/houston-tx/venues/sushi-horiuchi",
+      "website": "https://www.sushi-horiuchi.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "10:00 AM CT",
+      "releaseDay": "",
+      "bookingWindow": "30 days",
+      "bookingWindowDays": 30,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Be in the Resy app at exactly 10:00 AM CT, 30 days out — logged in, card saved (prepaid). Only 6 seats per night.",
+        "Bookable only in parties of 2, 4, or 6 (no odd-numbered parties).",
+        "Use Resy 'Notify' with push on for cancellations.",
+        "Weeknights (Tue/Wed) clear slightly less instantly than Fri/Sat."
+      ],
+      "signatureDish": "~20-course omakase; pecan-tofu custard with trout roe, Wagyu sukiyaki with white truffle",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 0,
+        "open": false,
+        "dates": []
+      }
+    },
+    {
+      "id": "oru",
+      "name": "Oru",
+      "neighborhood": "Heights",
+      "cuisine": "Japanese (hinoki sushi counter)",
+      "coordinates": {
+        "lat": 29.8077631,
+        "lng": -95.4112201
+      },
+      "difficulty": 5,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/houston-tx/venues/oru",
+      "website": "https://www.commahospitality.com/oru/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Set a Resy 'Notify' alert and be ready the instant slots drop — only ~24 counter seats.",
+        "Target off-peak nights (Tue/Wed) and early/late seatings; open Tue-Sat.",
+        "Watch Resy's Houston Hit List and Comma Hospitality channels for release announcements.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Scored-and-sauced nigiri, Wagyu Lumpia, chawanmushi with trout roe",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 14,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-06-29",
+          "2026-06-30"
+        ]
+      }
+    },
+    {
+      "id": "tatemo",
+      "name": "Tatemó",
+      "neighborhood": "Spring Branch",
+      "cuisine": "Modern Mexican tasting menu (heirloom corn)",
+      "coordinates": {
+        "lat": 29.8072355,
+        "lng": -95.4607095
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "Tock",
+      "platformUrl": "https://www.exploretock.com/tatemo/",
+      "website": "https://www.tatemohtx.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "calendar-month",
+      "releaseTime": "12:00 AM CT",
+      "releaseDay": "1st of previous month",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Reservations drop in the first week of each month for the FOLLOWING month — check Tock then.",
+        "Pre-load a Tock account with card saved (prepaid $155/person tasting).",
+        "Be flexible Wed/Thu and party of 2; only ~20 seats, Wed-Sat only.",
+        "BYOB. Email info@tatemohtx.com for dietary needs and cancellation re-releases.",
+        "Release time assumed midnight CT on the 1st — VERIFY exact drop day/time"
+      ],
+      "signatureDish": "Corn-centric tasting menu; tostada de tuna with caviar, enmolada with mole negro",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "mad",
+      "name": "MAD",
+      "neighborhood": "River Oaks",
+      "cuisine": "Spanish / Madrid-style tapas",
+      "coordinates": {
+        "lat": 29.7435177,
+        "lng": -95.4530983
+      },
+      "difficulty": 4,
+      "priceRange": "$$$",
+      "platform": "Website",
+      "platformUrl": "https://madhouston.com/",
+      "website": "https://madhouston.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Grab slots the moment new dates open (booked out ~6 weeks ahead).",
+        "Set a Resy 'Notify' alert for cancellations.",
+        "Target Tue/Wed over Thu-Sat; bar seats also require reservations.",
+        "VERIFY release time",
+        "Not bookable on Resy — reserve via the website or by phone"
+      ],
+      "signatureDish": "Wood-fired paella; steak tartare served in edible newsprint",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "bludorn",
+      "name": "Bludorn",
+      "neighborhood": "Montrose",
+      "cuisine": "New American / Gulf seafood",
+      "coordinates": {
+        "lat": 29.7588605,
+        "lng": -95.3856701
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "Website",
+      "platformUrl": "https://www.bludornrestaurant.com/",
+      "website": "https://www.bludornrestaurant.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Book via the Resy app, not the phone line.",
+        "Avoid Fri/Sat and holidays for first attempts — weeknights and Sunday are easier.",
+        "Set a Resy 'Notify' alert to catch cancellations.",
+        "Consider Bar Bludorn (separate Resy page) as a walk-in-friendly fallback.",
+        "VERIFY release time",
+        "Not bookable on Resy — reserve via the website or by phone"
+      ],
+      "signatureDish": "Baked Alaska; smoked short rib & blue cheese ravioli",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "jun",
+      "name": "Jūn",
+      "neighborhood": "Heights",
+      "cuisine": "New Asian American fusion",
+      "coordinates": {
+        "lat": 29.8039494,
+        "lng": -95.3941554
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "OpenTable",
+      "platformUrl": "https://www.opentable.com/r/jun-houston",
+      "website": "https://www.junbykin.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Book on OpenTable as far ahead as possible — demand spiked after the chefs' 2026 James Beard 'Best Chef: Texas' win.",
+        "Email booking@junbykin.com for parties of 6+.",
+        "Try early Wed/Thu 5pm seatings; set an OpenTable cancellation alert.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Thai-inspired fried chicken; charred whole fish with guajillo and lime",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "baso",
+      "name": "Baso",
+      "neighborhood": "Heights",
+      "cuisine": "Basque / Spanish live-fire",
+      "coordinates": {
+        "lat": 29.8028425,
+        "lng": -95.4057887
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "OpenTable",
+      "platformUrl": "https://www.opentable.com/r/baso-houston",
+      "website": "https://www.basohtx.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "Book prime-time 1-2 weeks ahead; confirm via OpenTable (the official site has a legacy Resy listing — OpenTable is current).",
+        "5pm/9pm slots open more easily.",
+        "Walk-in bar/kitchen counter is the easiest way in.",
+        "Parties cap at 6 (larger = buyout).",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Basque cheesecake (optional caviar); charred shrimp; venison tartare",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "kira",
+      "name": "Kira",
+      "neighborhood": "River Oaks",
+      "cuisine": "Japanese (temaki / donburi / kakigori)",
+      "coordinates": {
+        "lat": 29.7414668,
+        "lng": -95.4191951
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/houston-tx/venues/kira",
+      "website": "https://kirahtx.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "21 days",
+      "bookingWindowDays": 21,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Book primetime on Resy exactly when the ~3-week window opens; saved profile/card ready (only 15 seats).",
+        "If gone, target day-of 5pm/9pm slots and set a Resy 'Notify' alert.",
+        "Be flexible on party of 2 and weekdays.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Steak-and-eggs temaki (seared wagyu); A5 wagyu + shaved truffle donburi",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 14,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-06-29",
+          "2026-06-30"
+        ]
+      }
+    },
+    {
+      "id": "nobies",
+      "name": "Nobie's",
+      "neighborhood": "Montrose",
+      "cuisine": "New American",
+      "coordinates": {
+        "lat": 29.7353635,
+        "lng": -95.4100946
+      },
+      "difficulty": 4,
+      "priceRange": "$$$",
+      "platform": "SevenRooms",
+      "platformUrl": "https://www.sevenrooms.com/explore/nobies/reservations/create/search",
+      "website": "http://www.nobieshtx.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "28 days",
+      "bookingWindowDays": 28,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "Book exactly 4 weeks out when the date enters the window; check early in the day.",
+        "Start from nobieshtx.com to land on the current SevenRooms link (ignore the old Tock page).",
+        "Join the SevenRooms waitlist if sold out; arrive at 5pm for walk-in bar seats.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Texas Tartare; Dilly Bread with 'everything butter'; Nonno's Pasta (bolognese)",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "squable",
+      "name": "Squable",
+      "neighborhood": "Heights",
+      "cuisine": "Modern European/American small plates",
+      "coordinates": {
+        "lat": 29.8025778,
+        "lng": -95.409443
+      },
+      "difficulty": 4,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/houston-tx/venues/squable",
+      "website": "https://www.squabletime.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": true,
+      "walkIn": null,
+      "tips": [
+        "Book early and use Resy 'Notify'.",
+        "Roughly half the room is held for walk-ins — arrive early for the bar.",
+        "Target Tue-Thu; parties of 7+ handled separately via direct contact.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Dutch baby pancake; French cheeseburger with raclette; agnolotti",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 12,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-06-30",
+          "2026-07-01"
+        ]
+      }
+    },
+    {
+      "id": "sushi-by-hidden",
+      "name": "Sushi by Hidden",
+      "neighborhood": "Rice Village",
+      "cuisine": "Japanese omakase",
+      "coordinates": {
+        "lat": 29.7188853,
+        "lng": -95.4150482
+      },
+      "difficulty": 4,
+      "priceRange": "$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/houston-tx/venues/sushi-by-hidden",
+      "website": "https://sushibyhidden.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "12:00 PM CT",
+      "releaseDay": "",
+      "bookingWindow": "14 days",
+      "bookingWindowDays": 14,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Be online at exactly 12:00 PM CT (noon), 14 days out — that's when the new day opens on Resy.",
+        "Resy only — no walk-in or phone bookings; only a 10-seat counter.",
+        "BYOB ($20 corkage for 720ml+).",
+        "Parties of 10+ require a full buyout (email info@sushibyhidden.com)."
+      ],
+      "signatureDish": "12-course nigiri omakase (chef's selection, daily market fish)",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 12,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-28",
+          "2026-06-30",
+          "2026-07-01"
+        ]
+      }
+    },
+    {
+      "id": "le-jardinier",
+      "name": "Le Jardinier",
+      "neighborhood": "Museum District",
+      "cuisine": "French (seasonal, plant-forward)",
+      "coordinates": {
+        "lat": 29.7265462,
+        "lng": -95.3897537
+      },
+      "difficulty": 3,
+      "priceRange": "$$$$",
+      "platform": "SevenRooms",
+      "platformUrl": "https://www.sevenrooms.com/explore/lejardinierhoustonmrktingcrm/reservations/create/search",
+      "website": "https://www.lejardinier-houston.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Check SevenRooms, OpenTable AND Resy — availability differs per platform (https://www.opentable.com/r/le-jardinier-houston).",
+        "Lunch and weekend brunch are far easier than dinner.",
+        "Request patio/sculpture-garden seating; book early for Houston Restaurant Weeks.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Maine scallops with caper-raisin coulis; white truffle tagliatelle",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "uchi-houston",
+      "name": "Uchi Houston",
+      "neighborhood": "Montrose",
+      "cuisine": "Japanese",
+      "coordinates": {
+        "lat": 29.7448703,
+        "lng": -95.3907255
+      },
+      "difficulty": 3,
+      "priceRange": "$$$$",
+      "platform": "SevenRooms",
+      "platformUrl": "https://www.sevenrooms.com/reservations/uchihouston",
+      "website": "https://www.uchihouston.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "30 days",
+      "bookingWindowDays": 30,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Book through SevenRooms, not Resy/OpenTable (the Resy listing is stale).",
+        "Target Tue-Thu for easier availability; reserve weekends 3-4 weeks ahead.",
+        "Daily happy hour (4-6pm) is a lower-friction way in.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Hama Chili (yellowtail, orange, Thai chili, ponzu)",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    },
+    {
+      "id": "da-marco",
+      "name": "Da Marco",
+      "neighborhood": "Montrose",
+      "cuisine": "Italian fine dining",
+      "coordinates": {
+        "lat": 29.743089,
+        "lng": -95.3978402
+      },
+      "difficulty": 3,
+      "priceRange": "$$$$",
+      "platform": "Resy",
+      "platformUrl": "https://resy.com/cities/houston-tx/venues/da-marco",
+      "website": "https://www.damarcohouston.com/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Note the dress code (jacket preferred; no hats/t-shirts/shorts/sneakers).",
+        "Book weekends via Resy in advance; weeknights are more flexible.",
+        "Phone 713-807-8857 for last-minute or large parties.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Osso Buco; Cacio e Pepe; daily seasonal blackboard specials",
+      "lastVerified": "2026-06-25",
+      "availability": {
+        "checkedAt": "2026-06-25",
+        "source": "resy",
+        "partySize": 2,
+        "windowDays": 14,
+        "openDays": 9,
+        "open": true,
+        "dates": [
+          "2026-06-25",
+          "2026-06-26",
+          "2026-06-27",
+          "2026-06-30",
+          "2026-07-01",
+          "2026-07-02"
+        ]
+      }
+    },
+    {
+      "id": "hugos",
+      "name": "Hugo's",
+      "neighborhood": "Montrose",
+      "cuisine": "Regional Mexican / Oaxacan",
+      "coordinates": {
+        "lat": 29.7429809,
+        "lng": -95.39966
+      },
+      "difficulty": 3,
+      "priceRange": "$$$",
+      "platform": "SevenRooms",
+      "platformUrl": "https://www.sevenrooms.com/reservations/hugos",
+      "website": "https://www.hugosrestaurant.net/",
+      "phoneNumber": "",
+      "releaseSchedule": "daily",
+      "releaseTime": "",
+      "releaseDay": "",
+      "bookingWindow": "",
+      "bookingWindowDays": null,
+      "walkIns": false,
+      "walkIn": null,
+      "tips": [
+        "Book the Sunday brunch buffet (11am-3pm) well ahead — it's the hardest slot.",
+        "Weeknights (Tue/Wed dinner) are the easiest.",
+        "Book directly via SevenRooms or call 713-524-7744.",
+        "VERIFY release time"
+      ],
+      "signatureDish": "Sunday brunch buffet; Oaxacan moles; housemade tamales",
+      "lastVerified": "2026-06-25",
+      "availability": null
+    }
+  ]
+}

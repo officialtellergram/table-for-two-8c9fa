@@ -1,0 +1,119 @@
+{
+  "$comment": "City manifest. To ADD a city: (1) drop a cities/<key>.json dataset, (2) add an entry below with source {type:'json', url:'cities/<key>.json'}. To use the live NYC API, type 'hardtobook'. type 'soon' = greyed-out 'coming soon'. Nothing else to edit. See README.md.",
+  "cities": [
+    {
+      "key": "nyc",
+      "label": "New York City",
+      "short": "NYC",
+      "center": [
+        40.7332,
+        -73.9835
+      ],
+      "zoom": 12,
+      "source": {
+        "type": "json",
+        "url": "cities/nyc.json"
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "key": "la",
+      "label": "Los Angeles",
+      "short": "LA",
+      "center": [
+        34.05,
+        -118.24
+      ],
+      "zoom": 11,
+      "source": {
+        "type": "soon"
+      }
+    },
+    {
+      "key": "sf",
+      "label": "San Francisco",
+      "short": "SF",
+      "center": [
+        37.77,
+        -122.42
+      ],
+      "zoom": 12,
+      "source": {
+        "type": "soon"
+      }
+    },
+    {
+      "key": "chi",
+      "label": "Chicago",
+      "short": "CHI",
+      "center": [
+        41.88,
+        -87.63
+      ],
+      "zoom": 12,
+      "source": {
+        "type": "soon"
+      }
+    },
+    {
+      "key": "dc",
+      "label": "Washington, DC",
+      "short": "DC",
+      "center": [
+        38.8975,
+        -77.0197
+      ],
+      "zoom": 12,
+      "source": {
+        "type": "json",
+        "url": "cities/dc.json"
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "key": "richmond",
+      "label": "Richmond, VA",
+      "short": "RVA",
+      "center": [
+        37.5526,
+        -77.4548
+      ],
+      "zoom": 12,
+      "source": {
+        "type": "json",
+        "url": "cities/richmond.json"
+      },
+      "timezone": "America/New_York"
+    },
+    {
+      "key": "boston",
+      "label": "Boston, MA",
+      "short": "BOS",
+      "center": [
+        42.3582,
+        -71.0807
+      ],
+      "zoom": 12,
+      "timezone": "America/New_York",
+      "source": {
+        "type": "json",
+        "url": "cities/boston.json"
+      }
+    },
+    {
+      "key": "houston",
+      "label": "Houston, TX",
+      "short": "HOU",
+      "center": [
+        29.7613,
+        -95.4086
+      ],
+      "zoom": 12,
+      "timezone": "America/Chicago",
+      "source": {
+        "type": "json",
+        "url": "cities/houston.json"
+      }
+    }
+  ]
+}
