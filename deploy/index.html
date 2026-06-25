@@ -432,21 +432,31 @@ function prefillUrl(s){
   }catch(e){ return url; }
 }
 
+// Re-evaluate a Resy snapshot against TODAY: drop open dates that have already
+// passed, so an aging snapshot self-corrects instead of showing stale openings.
+function liveAvail(s){
+  const av=s.availability;
+  if(!av) return null;
+  const today=todayISO();
+  const future=(av.dates||[]).filter(d=>d>=today);
+  const ageDays=Math.max(0,Math.round((Date.parse(today)-Date.parse(av.checkedAt))/86400000));
+  return {...av, openDays:future.length, open:future.length>0, dates:future, stale:ageDays>0, ageDays};
+}
+
 /* Each spot resolves to one of four states, in priority order:
-   - 'open'      : a real availability check found open tables in the next 2 weeks
+   - 'open'      : real open tables found in the next 7 days (Resy)
    - 'countdown' : releases in batches (monthly) — show the timer to the next drop
-   - 'booked'    : checked, but no openings in the next 2 weeks (booked solid)
-   - 'unknown'   : we couldn't check live availability (non-Resy platform, etc.)
-   `availability` is a snapshot baked in when the data was last refreshed. */
+   - 'booked'    : checked, but no openings in the next 7 days (booked solid)
+   - 'unknown'   : we couldn't check live availability (non-Resy platform, etc.) */
 function isBatch(s){
   const sc=(s.releaseSchedule||'').toLowerCase().trim();
   return sc==='calendar-month' || sc==='calendar month' || sc==='monthly';
 }
 function spotState(s){
-  const av=s.availability;
+  const av=liveAvail(s);
   if(av && av.open) return 'open';
   if(isBatch(s) && nextDrop(s)) return 'countdown';
-  if(av) return 'booked';                    // checked, zero openings
+  if(av) return 'booked';                    // checked, zero future openings
   return 'unknown';                          // not checkable (e.g. not on Resy)
 }
 const STATE_RANK={open:0, countdown:1, unknown:2, booked:3};
@@ -612,11 +622,11 @@ function buildCard(s,drop){
   return el;
 }
 
-function fmtAsOf(av){ return av&&av.checkedAt ? 'as of '+av.checkedAt : ''; }
+function fmtAsOf(av){ return av&&av.checkedAt ? 'as of '+av.checkedAt+(av&&av.stale?' · re-check':'') : ''; }
 
 /* Paint a card's status box for its state. Only 'countdown' cards need re-painting each tick. */
 function paintCard(c){
-  const s=c.spot, av=s.availability, now=Date.now();
+  const s=c.spot, av=liveAvail(s), now=Date.now();
   c.el.classList.remove('soon');
   if(c.state==='open'){
     c.dropEl.className='drop avail'; c.lblEl.textContent='Tables open';
@@ -683,7 +693,7 @@ function buildMarkers(){
   mapBuilt=true;
 }
 function popupHtml(s){
-  const state=spotState(s), av=s.availability, d=nextDrop(s);
+  const state=spotState(s), av=liveAvail(s), d=nextDrop(s);
   const open=state==='open';
   let statusLine;
   if(open) statusLine=`<div><span class="pop-time" style="color:var(--good)">✓ Booking Available</span> — ${av.openDays} day${av.openDays===1?'':'s'} open, party ${av.partySize}</div><div class="pop-sub">${fmtAsOf(av)}</div>`;

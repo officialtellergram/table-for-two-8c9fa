@@ -84,7 +84,7 @@ def availability(spot, party_size=2, window_days=14, today=None, session=None):
                  if (d.get("inventory") or {}).get("reservation") == "available"]
     return {"checkedAt": today.isoformat(), "source": "resy", "partySize": party_size,
             "windowDays": window_days, "openDays": len(open_days),
-            "open": len(open_days) > 0, "dates": open_days[:6]}
+            "open": len(open_days) > 0, "dates": open_days}
 
 
 def slug_candidates(name):
