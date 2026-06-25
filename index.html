@@ -7,6 +7,7 @@
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="0" />
+<script>(function(){try{var t=localStorage.getItem('t42-theme')||((window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark');document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
 <title>Table for Two ✌︎ — hard-to-book reservations</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='88'>✌️</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,16 +22,31 @@
     --accent:#c9a86a; --accent2:#dcc28c; --good:#86b6a0; --soon:#cda766;
     --resy:#c97078; --tock:#7d97bd; --opentable:#c87a68; --sevenrooms:#9b92c4;
     --invite:#9a9aa0; --radius:14px;
-    --serif:'Inter',-apple-system,'Segoe UI',sans-serif;
-    --glow:none;
+    --serif:'Inter',-apple-system,'Segoe UI',sans-serif; --glow:none;
+    --hover:#131315; --line2:#34343a; --dot:#2c2c30; --onaccent:#15110a;
+    --nm:linear-gradient(94deg,#f4f3f1,#dcc28c 55%,#c9a86a);
+    --topglow:rgba(201,168,106,.07); --headbg:rgba(10,10,11,.78);
+    color-scheme:dark;
+  }
+  html[data-theme="light"]{
+    --bg:#f4f3ef; --panel:#fffffe; --panel2:#efece5; --line:#e5e1d8;
+    --txt:#1b1a1c; --muted:#6f6c74; --faint:#a8a4ac;
+    --accent:#a8843c; --accent2:#937734; --good:#3f8068; --soon:#a8803a;
+    --resy:#bf4651; --tock:#3f6aa0; --opentable:#bf5641; --sevenrooms:#6c60b4;
+    --invite:#7a7780;
+    --hover:#f1efe9; --line2:#d3cec3; --dot:#d9d5cc; --onaccent:#fffaf0;
+    --nm:linear-gradient(94deg,#2a2a2c,#9c7d3a 55%,#a8843c);
+    --topglow:rgba(168,132,60,.06); --headbg:rgba(244,243,239,.82);
+    color-scheme:light;
   }
   *{box-sizing:border-box}
   html,body{margin:0}
   body{
     background:
-      radial-gradient(900px 460px at 50% -14%, rgba(201,168,106,.07), transparent 64%),
+      radial-gradient(900px 460px at 50% -14%, var(--topglow), transparent 64%),
       var(--bg);
     background-attachment:fixed; color:var(--txt);
+    transition:background-color .25s ease,color .25s ease;
     font:15px/1.55 'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     letter-spacing:-.1px;
     -webkit-font-smoothing:antialiased; padding-bottom:env(safe-area-inset-bottom);
@@ -40,7 +56,7 @@
   .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
 
   /* Header */
-  header{position:sticky;top:0;z-index:500;background:rgba(10,10,11,.78);
+  header{position:sticky;top:0;z-index:500;background:var(--headbg);
     backdrop-filter:blur(18px) saturate(1.05);border-bottom:1px solid var(--line)}
   .topbar{display:flex;align-items:center;gap:12px;padding:18px 0;flex-wrap:wrap}
   .brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);
@@ -48,7 +64,7 @@
   .brand .mark{font-size:18px;align-self:center;transform:rotate(-10deg);
     filter:drop-shadow(0 2px 7px rgba(201,168,106,.5));animation:wave 3s ease-in-out infinite}
   @keyframes wave{0%,72%,100%{transform:rotate(-10deg)}82%{transform:rotate(5deg)}90%{transform:rotate(-4deg)}}
-  .brand .nm{background:linear-gradient(94deg,#f4f3f1,#dcc28c 55%,#c9a86a);
+  .brand .nm{background:var(--nm);
     -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
   .brand small{font-family:'Inter',sans-serif;font-weight:400;letter-spacing:.2px;text-transform:none;
     color:var(--muted);font-size:11px;-webkit-text-fill-color:var(--muted)}
@@ -58,14 +74,14 @@
     background:transparent;border:1px solid var(--line);border-radius:10px;
     padding:8px 12px;appearance:none;cursor:pointer;color:var(--txt)}
   .city-select{font-weight:600;font-size:13px;letter-spacing:.3px}
-  .city-select:hover,.sort-select:hover,.filter-select:hover,.iconbtn:hover{border-color:#3a3a40}
+  .city-select:hover,.sort-select:hover,.filter-select:hover,.iconbtn:hover{border-color:var(--line2)}
   select:focus-visible,input:focus-visible{outline:none;border-color:var(--accent);box-shadow:0 0 0 3px rgba(201,168,106,.16)}
   .iconbtn{background:transparent;border:1px solid var(--line);border-radius:10px;
     padding:8px 12px;cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--muted)}
-  .iconbtn.active{background:var(--accent);border-color:var(--accent);color:#15110a}
+  .iconbtn.active{background:var(--accent);border-color:var(--accent);color:var(--onaccent)}
   .seg{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}
   .seg button{background:transparent;border:0;padding:8px 15px;cursor:pointer;color:var(--muted);font-weight:500;letter-spacing:.3px}
-  .seg button.active{background:var(--accent);color:#15110a}
+  .seg button.active{background:var(--accent);color:var(--onaccent)}
 
   /* Controls */
   .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;padding:16px 0 10px}
@@ -84,7 +100,7 @@
   .card{position:relative;display:flex;flex-direction:column;gap:13px;padding:20px;
     border-radius:var(--radius);border:1px solid var(--line);background:var(--panel);
     transition:border-color .2s ease,background .2s ease}
-  .card:hover{border-color:#34343a;background:#131315}
+  .card:hover{border-color:var(--line2);background:var(--hover)}
   .card.soon{border-color:rgba(205,167,102,.5)}
   .card-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}
   .name{font-family:var(--serif);font-weight:600;font-size:17.5px;line-height:1.22;letter-spacing:-.3px}
@@ -92,7 +108,7 @@
   .card-head>div:last-child{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
   .pill{font-size:9.5px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;white-space:nowrap}
   .diff{display:inline-flex;gap:4px;align-items:center}
-  .diff i{width:5px;height:5px;border-radius:50%;background:#2c2c30;display:inline-block}
+  .diff i{width:5px;height:5px;border-radius:50%;background:var(--dot);display:inline-block}
   .diff i.on{background:var(--accent)}
   .price{color:var(--accent2);font-weight:500;font-size:12px;letter-spacing:1px}
 
@@ -127,7 +143,7 @@
   .btn.book:hover{border-color:color-mix(in srgb, var(--c, #888) 62%, transparent);background:color-mix(in srgb, var(--c, #888) 9%, transparent)}
   .btn:active{transform:translateY(1px)}
   .btn.ghost{background:transparent;color:var(--muted)}
-  .btn.ghost:hover{border-color:#33333a;color:var(--txt)}
+  .btn.ghost:hover{border-color:var(--line2);color:var(--txt)}
   details.tips{font-size:12.5px}
   details.tips summary{cursor:pointer;color:var(--muted);list-style:none}
   details.tips summary::-webkit-details-marker{display:none}
@@ -175,6 +191,7 @@
         <button id="vList" class="active">List</button>
         <button id="vMap">Map</button>
       </div>
+      <button class="iconbtn" id="themeToggle" title="Toggle light / dark" aria-label="Toggle theme">☀</button>
       <button class="iconbtn" id="refresh" title="Refresh data">↻</button>
     </div>
     <div class="controls" id="controls">
@@ -471,7 +488,7 @@ let RAW=[];            // normalized spots for current city
 let META=null;
 let cityKey='nyc';
 let view='list';
-let map=null, markers=null, mapBuilt=false;
+let map=null, markers=null, mapBuilt=false, tileLayer=null;
 const cards=[];        // {spot, el, timeEl, whenEl, dropEl} for live ticking
 
 const $=id=>document.getElementById(id);
@@ -667,7 +684,7 @@ function showMap(){
   $('grid').classList.add('hide'); $('map').style.display='block';
   if(!map){
     map=L.map('map',{zoomControl:true});
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+    tileLayer=L.tileLayer(tileUrl(),
       {maxZoom:19, attribution:'&copy; OpenStreetMap &copy; CARTO'}).addTo(map);
   }
   if(!mapBuilt) buildMarkers();
@@ -716,6 +733,26 @@ function hideState(){ $('state').classList.add('hide'); }
 function esc(x){ return String(x==null?'':x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
 function attr(x){ return esc(x).replace(/'/g,'&#39;'); }
 
+/* ---------- Theme (dark / light) ---------- */
+function tileUrl(){
+  return document.documentElement.getAttribute('data-theme')==='light'
+    ? 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png'
+    : 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png';
+}
+function applyTheme(t){
+  document.documentElement.setAttribute('data-theme', t);
+  const tg=$('themeToggle'); if(tg) tg.textContent = t==='light' ? '☾' : '☀';
+  const mc=document.querySelector('meta[name=theme-color]'); if(mc) mc.setAttribute('content', t==='light'?'#f4f3ef':'#0a0a0b');
+  try{ localStorage.setItem('t42-theme', t); }catch(e){}
+  if(tileLayer) tileLayer.setUrl(tileUrl());
+}
+function toggleTheme(){ applyTheme(document.documentElement.getAttribute('data-theme')==='light'?'dark':'light'); }
+function initTheme(){
+  let t; try{ t=localStorage.getItem('t42-theme'); }catch(e){}
+  if(!t) t=(window.matchMedia&&matchMedia('(prefers-color-scheme: light)').matches)?'light':'dark';
+  applyTheme(t);
+}
+
 /* ---------- Wire up ---------- */
 function setView(v){
   view=v;
@@ -726,11 +763,13 @@ function setView(v){
 $('vList').onclick=()=>setView('list');
 $('vMap').onclick=()=>setView('map');
 $('refresh').onclick=()=>loadCity();
+$('themeToggle').onclick=toggleTheme;
 for(const id of ['q','sort','fCuisine','fHood','fDiff','fWalk']){
   $(id).addEventListener('input',()=>{ if(view==='list') render(); });
 }
 
 (async function boot(){
+  initTheme();
   if(location.protocol==='file:'){
     showState('<h2>⚠ Open via the local server, not a file</h2>'+
       '<p style="max-width:520px;margin:0 auto;line-height:1.6">You\'re viewing this as a <b>file://</b> path, so the browser blocks loading the city data '+
