@@ -3,6 +3,6 @@ scraper/.geocache.json
 *.pyc
 .DS_Store
 Thumbs.db
-scraper/.sniper_state.json
-scraper/.geocache.json
-__pycache__/
+
+# Note: scraper/.sniper_state.json IS tracked on purpose — the hourly cloud
+# routine clones the repo fresh each run, so the diff state has to persist in git.
