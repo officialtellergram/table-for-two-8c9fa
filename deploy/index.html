@@ -633,9 +633,17 @@ function dcmp(a,b){ // nulls (no scheduled drop) last
 async function loadSniper(){
   try{
     const r=await fetch(bust('cities/just-opened.json'),{cache:'no-store'});
-    if(r.ok) SNIPER=await r.json();
-  }catch(e){ SNIPER=null; }
-  renderJustOpened();
+    if(r.ok){
+      const next=await r.json();
+      // only re-render when the radar actually pushed a new sweep — avoids
+      // disturbing the strip (and its scroll) on every poll
+      const changed=!SNIPER || SNIPER.generated!==next.generated;
+      SNIPER=next;
+      if(changed) renderJustOpened();
+      return;
+    }
+  }catch(e){ /* keep the last good feed on a transient fetch error */ }
+  if(!SNIPER) renderJustOpened();
 }
 function fmtTime(hhmm){
   if(!hhmm) return '';
@@ -905,6 +913,7 @@ for(const id of ['q','sort','fCuisine','fHood','fDiff','fVibe','fOccasion','fWal
   initCitySelect();
   await loadCity();
   loadSniper();          // fetch the cancellation-radar feed (non-blocking)
+  setInterval(loadSniper,180000);   // re-poll the feed every 3 min; re-renders only on a new sweep
   setInterval(tick,1000);
 })();
 </script>
